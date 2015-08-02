@@ -24,8 +24,11 @@ ext {
 }
 
 dependencies {
+    compile('cn.trinea.android.view.autoscrollviewpager:android-auto-scroll-view-pager:1.1.2') {
+        exclude module: 'support-v4'
+    }
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile "org.robobinding:robobinding:${robobindingVersion}"
+    compile "org.robobinding:robobinding:$robobindingVersion"
     compile 'com.android.support:appcompat-v7:22.2.0'
     compile 'com.mcxiaoke.volley:library:1.0.18'
     compile 'com.getbase:floatingactionbutton:1.10.0'
