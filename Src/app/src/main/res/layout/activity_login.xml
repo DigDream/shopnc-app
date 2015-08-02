@@ -44,6 +44,15 @@
             android:layout_marginRight="10dp"
             android:text="@string/btn_login"/>
 
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_marginTop="15dp"
+            android:text="@string/tv_register"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
     </LinearLayout>
 
 </LinearLayout>

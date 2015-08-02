@@ -1,6 +1,9 @@
 package com.daxueoo.shopnc.sdk;
 
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.util.Log;
 
 import com.android.volley.Request;
@@ -8,7 +11,9 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.Volley;
+import com.daxueoo.shopnc.R;
 import com.daxueoo.shopnc.network.adapter.NormalPostRequest;
+import com.daxueoo.shopnc.ui.activity.LoginActivity;
 import com.daxueoo.shopnc.utils.ConstUtils;
 import com.daxueoo.shopnc.utils.SharedPreferencesUtils;
 
@@ -24,6 +29,32 @@ import java.util.Map;
 public class Shopnc {
 
     public static final String TAG = "WorktileSdk";
+
+    public static void isLogin(final Context context) {
+        if (SharedPreferencesUtils.getParam(context, "key", "false").equals("false")) {
+            AlertDialog.Builder builder = new AlertDialog.Builder(context);  //先得到构造器
+            builder.setTitle("亲，您还未登录呢"); //设置标题
+            builder.setMessage("是否立即登录?"); //设置内容
+            builder.setIcon(R.mipmap.ic_launcher);//设置图标，图片id即可
+            builder.setPositiveButton(R.string.dialog_ok, new DialogInterface.OnClickListener() { //设置确定按钮
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    dialog.dismiss();
+                    Intent intent = new Intent();
+                    intent.setClass(context, LoginActivity.class);
+                    context.startActivity(intent);
+                }
+            });
+            builder.setNegativeButton(R.string.dialog_cancel, new DialogInterface.OnClickListener() { //设置取消按钮
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    dialog.dismiss();
+                }
+            });
+            //参数都设置完成，创建并显示出来
+            builder.create().show();
+        }
+    }
 
     public static void login(final Context context, String username, String password, String type) {
         final RequestQueue requestQueue = Volley.newRequestQueue(context);

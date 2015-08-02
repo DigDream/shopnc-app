@@ -19,10 +19,10 @@ public class TradeFragment extends BaseFragment {
 			Bundle savedInstanceState) {
 		view = View.inflate(activity, R.layout.fragment_trade, null);
 
-		new TitleBuilder(view).setTitleText("首页").setLeftText("LEFT").setLeftOnClickListener(new View.OnClickListener() {
+		new TitleBuilder(view).setTitleText("交易").setRightImage(R.mipmap.ic_launcher).setRightOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				ToastUtils.showToast(activity, "left onclick", Toast.LENGTH_SHORT);
+				ToastUtils.showToast(activity, "right click~", Toast.LENGTH_SHORT);
 			}
 		});
 

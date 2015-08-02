@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/topiclist"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="10dp">
+
+    <TextView
+        android:id="@+id/tv_topic_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="RobotoSlab-Regular.ttf"
+        android:maxLines="1"
+        android:text="领导突然安排我明天去相亲，对女方几乎没有了解，求建议或攻略！"
+        android:textSize="22sp"
+        />
+
+    <LinearLayout
+        android:id="@+id/topic_content_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_topic_title"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_topic_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="3"
+            android:ellipsize="end"
+            android:maxLines="5"
+            android:text="我是一个懒人，平时喜欢做一些小工具帮自己分担一些工作。
+这是我一年前做的一个自动切图插件在我是用自己名字暂时随便取的，所以求助V友们帮忙想一个名字，
+然后我会做一个主页。
+像 Slicy 这个名字就不错可惜被用了。"
+            android:textColor="#737373"
+            android:textSize="14sp"/>
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/iv_topic_head"
+            android:layout_width="162dp"
+            android:layout_height="116dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="10dp"
+            android:src="@mipmap/ic_launcher"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_topic_views"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topic_content_list"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="2dp"
+        android:text="123445次"
+        android:textColor="#aaa"
+        android:textSize="12sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_topic_replies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topic_content_list"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@id/tv_topic_views"
+        android:layout_toRightOf="@id/tv_topic_views"
+        android:text="14 条回复"
+        android:textColor="#aaa"
+        android:textSize="12sp"/>
+
+    <com.daxueoo.shopnc.widgets.RelativeTimeTextView
+        android:id="@+id/tv_topic_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topic_content_list"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@id/tv_topic_replies"
+        android:layout_toRightOf="@id/tv_topic_replies"
+        android:text="12 小时前"
+        android:textColor="#aaa"
+        android:textSize="12sp"
+        />
+
+</RelativeLayout>

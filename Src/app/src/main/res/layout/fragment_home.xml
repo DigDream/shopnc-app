@@ -13,9 +13,36 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-    <TextView
-        style="@style/TextViewSubhead"
-        android:text="@string/tab_tv_index"
-        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_test"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/app_name"/>
+
+        <Button
+            android:id="@+id/btn_test_test"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/app_name"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_fragment_topic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1dp"
+        android:clipToPadding="false"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1px"
+        android:listSelector="@android:color/transparent"
+        android:paddingBottom="8dp"
+        android:scrollbars="none"/>
 
 </LinearLayout>

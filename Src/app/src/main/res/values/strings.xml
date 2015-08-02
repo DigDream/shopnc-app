@@ -4,6 +4,8 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
+    <string name="just_now">Just now</string>
+
     <!-- tab_tv-->
     <string name="tab_tv_index">首页</string>
     <string name="tab_tv_mall">商城</string>
@@ -17,5 +19,12 @@
     <string name="et_text_username">请输入用户名</string>
     <string name="et_text_password">请输入密码</string>
     <string name="et_text_email">请输入邮箱</string>
+
+    <string name="dialog_ok">确定</string>
+    <string name="dialog_cancel">取消</string>
+
+    <string name="tv_register">新用户注册</string>
+
+    <string name="tv_setting">设置</string>
     
 </resources>

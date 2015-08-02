@@ -22,6 +22,7 @@ public class LoginActivity extends BaseActivity {
     private Button btn_login;
     private String TAG = "LoginActivity";
     private TextView tv_title;
+    private TextView tv_register;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,9 +44,17 @@ public class LoginActivity extends BaseActivity {
 
                 //跳转Activity
                 Intent intent = new Intent();
-                intent.setClass(LoginActivity.this, RegisterActivity.class);
+                intent.setClass(LoginActivity.this, MainTabActivity.class);
                 startActivity(intent);
                 finish();
+            }
+        });
+        tv_register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(LoginActivity.this, RegisterActivity.class);
+                startActivity(intent);
             }
         });
     }
@@ -55,6 +64,7 @@ public class LoginActivity extends BaseActivity {
         et_password = (EditText) findViewById(R.id.et_password);
 
         tv_title = (TextView) findViewById(R.id.titlebar_tv);
+        tv_register = (TextView) findViewById(R.id.tv_register);
         btn_login = (Button) findViewById(R.id.btn_login);
     }
 

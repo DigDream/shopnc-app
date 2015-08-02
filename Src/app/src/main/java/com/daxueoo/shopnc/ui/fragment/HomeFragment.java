@@ -8,10 +8,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.daxueoo.shopnc.R;
 import com.daxueoo.shopnc.adapter.ImagePagerAdapter;
+import com.daxueoo.shopnc.adapter.TopicAdapter;
+import com.daxueoo.shopnc.model.TopicMessage;
 import com.daxueoo.shopnc.utils.ListUtils;
 
 import org.w3c.dom.Text;
@@ -33,6 +36,11 @@ public class HomeFragment extends BaseFragment {
 
     private TextView tv_title;
 
+    private ListView mListView;
+
+    private List<TopicMessage> data = new ArrayList<TopicMessage>();
+    private TopicAdapter mAdapter;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = View.inflate(activity, R.layout.fragment_home, null);
@@ -40,6 +48,8 @@ public class HomeFragment extends BaseFragment {
         //滚动图片
         viewPager = (AutoScrollViewPager) view.findViewById(R.id.view_pager);
         tv_title = (TextView) view.findViewById(R.id.titlebar_tv);
+
+        mListView = (ListView) view.findViewById(R.id.list_fragment_topic);
 
         return view;
     }
@@ -49,6 +59,21 @@ public class HomeFragment extends BaseFragment {
         super.onViewCreated(view, savedInstanceState);
         tv_title.setText(R.string.tab_tv_index);
         initViewPager();
+        initListView();
+        initData();
+    }
+
+    private void initListView() {
+        mAdapter = new TopicAdapter(this.getActivity(), data);
+        mListView.setAdapter(mAdapter);
+    }
+
+    private void initData() {
+        for (int i = 0; i < 10; i++) {
+            TopicMessage msg = new TopicMessage("标题", "这是一个内容,tv_views,tv_views,tv_views,tv_views,tv_views,tv_views","独步清风","12小时前","5条回复");
+            msg.setIcon_url("https://cdn.v2ex.co/avatar/7b5a/e206/89357_large.png");
+            data.add(msg);
+        }
     }
 
     /**
