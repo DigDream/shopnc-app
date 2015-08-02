@@ -9,6 +9,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.daxueoo.shopnc.R;
+import com.daxueoo.shopnc.sdk.Shopnc;
+import com.daxueoo.shopnc.utils.ConstUtils;
 
 /**
  * Created by user on 15-8-2.
@@ -40,6 +42,7 @@ public class RegisterActivity extends BaseActivity {
                 Log.e(TAG, et_email.getText().toString());
                 //发送post请求
 
+                Shopnc.register(RegisterActivity.this, et_username.getText().toString(), et_password.getText().toString(), et_email.getText().toString(), ConstUtils.client_type);
                 //跳转Activity
                 Intent intent = new Intent();
                 intent.setClass(RegisterActivity.this, MainTabActivity.class);

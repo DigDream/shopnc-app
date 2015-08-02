@@ -10,6 +10,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.daxueoo.shopnc.R;
+import com.daxueoo.shopnc.sdk.Shopnc;
+import com.daxueoo.shopnc.utils.ConstUtils;
 
 /**
  * Created by user on 15-8-2.
@@ -34,9 +36,10 @@ public class LoginActivity extends BaseActivity {
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.e(TAG,et_username.getText().toString());
-                Log.e(TAG,et_password.getText().toString());
+                Log.e(TAG, et_username.getText().toString());
+                Log.e(TAG, et_password.getText().toString());
                 //发送post请求
+                Shopnc.login(LoginActivity.this, et_username.getText().toString(), et_password.getText().toString(), ConstUtils.client_type);
 
                 //跳转Activity
                 Intent intent = new Intent();
