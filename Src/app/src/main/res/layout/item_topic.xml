@@ -15,7 +15,7 @@
         android:fontFamily="RobotoSlab-Regular.ttf"
         android:maxLines="1"
         android:text="领导突然安排我明天去相亲，对女方几乎没有了解，求建议或攻略！"
-        android:textSize="22sp"
+        android:textSize="20sp"
         />
 
     <LinearLayout

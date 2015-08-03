@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bg_gray"
@@ -8,41 +9,83 @@
 
     <include layout="@layout/include_titlebar"/>
 
-    <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
-        android:id="@+id/view_pager"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/btn_test"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="@string/app_name"/>
-
-        <Button
-            android:id="@+id/btn_test_test"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="@string/app_name"/>
-    </LinearLayout>
-
-    <ListView
-        android:id="@+id/list_fragment_topic"
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:id="@+id/rotate_header_web_view_frame"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="1dp"
-        android:clipToPadding="false"
-        android:divider="@android:color/darker_gray"
-        android:dividerHeight="1px"
-        android:listSelector="@android:color/transparent"
-        android:paddingBottom="8dp"
-        android:scrollbars="none"/>
+        android:background="@color/bg_gray"
+        app:ptr_duration_to_close="200"
+        app:ptr_duration_to_close_header="1000"
+        app:ptr_keep_header_when_refresh="true"
+        app:ptr_pull_to_fresh="false"
+        app:ptr_ratio_of_header_height_to_refresh="1.2"
+        app:ptr_resistance="1.7">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
+                    android:id="@+id/view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_test"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableLeft="@mipmap/ic_launcher"
+                        android:drawableStart="@mipmap/ic_launcher"
+                        android:text="@string/app_name"/>
+
+                    <Button
+                        android:id="@+id/btn_test_test"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableLeft="@mipmap/ic_launcher"
+                        android:drawableStart="@mipmap/ic_launcher"
+                        android:text="@string/app_name"/>
+                </LinearLayout>
+
+                <in.srain.cube.views.loadmore.LoadMoreListViewContainer
+                    android:id="@+id/load_more_list_view_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/cube_mints_white">
+
+                <ListView
+                    android:id="@+id/list_fragment_topic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1dp"
+                    android:clipToPadding="false"
+                    android:divider="@android:color/darker_gray"
+                    android:dividerHeight="1px"
+                    android:listSelector="@android:color/transparent"
+                    android:paddingBottom="8dp"
+                    android:scrollbars="none"/>
+
+                </in.srain.cube.views.loadmore.LoadMoreListViewContainer>
+            </LinearLayout>
+
+        </ScrollView>
+
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
 
 </LinearLayout>
