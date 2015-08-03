@@ -10,11 +10,14 @@ import android.view.animation.Animation;
 
 import com.daxueoo.shopnc.MainActivity;
 import com.daxueoo.shopnc.R;
+import com.daxueoo.shopnc.utils.SharedPreferencesUtils;
 
 /**
  * Created by user on 15-8-2.
  */
 public class SplashActivity extends BaseActivity {
+
+    Boolean isFirst = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,10 +36,18 @@ public class SplashActivity extends BaseActivity {
 
             @Override
             public void onAnimationEnd(Animation arg0) {
-                // TODO Auto-generated method stub
-                Intent intent = new Intent(SplashActivity.this, ScollerViewActivity.class);
-                startActivity(intent);
-                finish();
+                Intent intent;
+                if ((Boolean) SharedPreferencesUtils.getParam(SplashActivity.this, "isFirst", isFirst)) {
+                    intent = new Intent(SplashActivity.this, ScollerViewActivity.class);
+                    startActivity(intent);
+                    isFirst = false;
+                    SharedPreferencesUtils.setParam(SplashActivity.this, "isFirst", isFirst);
+                    finish();
+                } else {
+                    intent = new Intent(SplashActivity.this, MainTabActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
             }
 
             @Override

@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.andreabaccega.widget.FormEditText;
 import com.daxueoo.shopnc.R;
 import com.daxueoo.shopnc.sdk.Shopnc;
 import com.daxueoo.shopnc.utils.ConstUtils;
@@ -17,12 +18,12 @@ import com.daxueoo.shopnc.utils.ConstUtils;
  */
 public class RegisterActivity extends BaseActivity {
 
-    private EditText et_username;
-    private EditText et_password;
+    private FormEditText et_username;
+    private FormEditText et_password;
     private Button btn_login;
     private String TAG = "RegisterActivity";
     private TextView tv_title;
-    private EditText et_email;
+    private FormEditText et_email;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,25 +38,41 @@ public class RegisterActivity extends BaseActivity {
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.e(TAG, et_username.getText().toString());
-                Log.e(TAG, et_password.getText().toString());
-                Log.e(TAG, et_email.getText().toString());
-                //发送post请求
+                FormEditText[] allFields = {et_email, et_username, et_password};
 
-                Shopnc.register(RegisterActivity.this, et_username.getText().toString(), et_password.getText().toString(), et_email.getText().toString(), ConstUtils.client_type);
-                //跳转Activity
-                Intent intent = new Intent();
-                intent.setClass(RegisterActivity.this, MainTabActivity.class);
-                startActivity(intent);
-                finish();
+
+                boolean allValid = true;
+                for (FormEditText field : allFields) {
+                    allValid = field.testValidity() && allValid;
+                }
+
+                if (allValid) {
+                    // YAY
+                    Log.e(TAG, "test" + et_email.getText().toString());
+                    Log.e(TAG, "test" + et_password.getText().toString());
+                    //发送post请求
+
+                    Shopnc.register(RegisterActivity.this, et_username.getText().toString(), et_password.getText().toString(), et_email.getText().toString(), ConstUtils.client_type);
+                    //跳转Activity
+                    Intent intent = new Intent();
+                    intent.setClass(RegisterActivity.this, MainTabActivity.class);
+                    startActivity(intent);
+                    finish();
+                } else {
+                    Log.e(TAG, et_username.getText().toString());
+                    Log.e(TAG, et_password.getText().toString());
+                    // EditText are going to appear with an exclamation mark and an explicative message.
+                }
+
+
             }
         });
     }
 
     private void findViewsById() {
-        et_username = (EditText) findViewById(R.id.et_username);
-        et_password = (EditText) findViewById(R.id.et_password);
-        et_email = (EditText) findViewById(R.id.et_email);
+        et_username = (FormEditText) findViewById(R.id.et_username);
+        et_password = (FormEditText) findViewById(R.id.et_password);
+        et_email = (FormEditText) findViewById(R.id.et_email);
 
         tv_title = (TextView) findViewById(R.id.titlebar_tv);
         btn_login = (Button) findViewById(R.id.btn_login);

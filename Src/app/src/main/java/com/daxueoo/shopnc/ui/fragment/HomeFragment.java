@@ -20,6 +20,7 @@ import com.daxueoo.shopnc.adapter.ImagePagerAdapter;
 import com.daxueoo.shopnc.adapter.TopicAdapter;
 import com.daxueoo.shopnc.model.TopicMessage;
 import com.daxueoo.shopnc.utils.ListUtils;
+import com.daxueoo.shopnc.utils.SystemUtils;
 
 import org.w3c.dom.Text;
 
@@ -81,7 +82,7 @@ public class HomeFragment extends BaseFragment {
         initViewPager();
         initListView();
         initData();
-        setListViewHeightBasedOnChildren(mListView);
+        SystemUtils.setListViewHeightBasedOnChildren(mListView);
         initPtr();
         initLoadMore();
 
@@ -145,24 +146,6 @@ public class HomeFragment extends BaseFragment {
         }, 100);
     }
 
-
-    public void setListViewHeightBasedOnChildren(ListView listView) {
-        ListAdapter listAdapter = listView.getAdapter();
-        if (listAdapter == null) {
-            return;
-        }
-        int totalHeight = 0;
-        for (int i = 0; i < listAdapter.getCount(); i++) {
-            View listItem = listAdapter.getView(i, null, listView);
-            listItem.measure(0, 0);
-            totalHeight += listItem.getMeasuredHeight();
-        }
-        ViewGroup.LayoutParams params = listView.getLayoutParams();
-        params.height = totalHeight + (listView.getDividerHeight() * (listAdapter.getCount() - 1));
-        params.height += 5;//if without this statement,the listview will be a little short
-        listView.setLayoutParams(params);
-    }
-
     private void initListView() {
         mAdapter = new TopicAdapter(this.getActivity(), data);
         mListView.setAdapter(mAdapter);
@@ -185,7 +168,7 @@ public class HomeFragment extends BaseFragment {
         imageIdList.add(R.mipmap.banner2);
         imageIdList.add(R.mipmap.banner3);
         imageIdList.add(R.mipmap.banner4);
-        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, (int) (getScreen(this.getActivity()).heightPixels / 4));
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, (int) (SystemUtils.getScreen(this.getActivity()).heightPixels / 4));
         viewPager.setLayoutParams(params);
         viewPager.setAdapter(new ImagePagerAdapter(this.getActivity(), imageIdList).setInfiniteLoop(true));
         //setOnPageChangeListener过期方法，被addOnPageChangeListener、removeOnPageChangeListener代替
@@ -196,17 +179,7 @@ public class HomeFragment extends BaseFragment {
         viewPager.setCurrentItem(Integer.MAX_VALUE / 2 - Integer.MAX_VALUE / 2 % ListUtils.getSize(imageIdList));
     }
 
-    /**
-     * 获取屏幕宽高
-     *
-     * @param activity
-     * @return
-     */
-    public DisplayMetrics getScreen(Activity activity) {
-        DisplayMetrics outMetrics = new DisplayMetrics();
-        activity.getWindowManager().getDefaultDisplay().getMetrics(outMetrics);
-        return outMetrics;
-    }
+
 
     /**
      * 一个ViewPager的OnPageChangeListener类，可以重写onPageSelected方法去添加小圆点等

@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/bg_gray"
-    android:orientation="vertical" >
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_gray"
+              android:orientation="vertical">
 
     <include layout="@layout/include_titlebar"/>
 
-    <TextView 
-        style="@style/TextViewSubhead"
-        android:text="@string/tab_tv_mine"
-        />
+    <com.daxueoo.shopnc.widgets.pulltozoom.PullToZoomScrollViewEx
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.daxueoo.shopnc.widgets.pulltozoom.PullToZoomScrollViewEx>
+
 </LinearLayout>

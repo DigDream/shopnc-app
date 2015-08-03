@@ -34,5 +34,6 @@ dependencies {
     compile 'com.android.support:appcompat-v7:22.2.0'
     compile 'com.mcxiaoke.volley:library:1.0.18'
     compile 'com.getbase:floatingactionbutton:1.10.0'
+    compile 'com.andreabaccega:android-form-edittext:1.2.1@aar'
     compile project(':library')
 }

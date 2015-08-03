@@ -66,6 +66,7 @@ public class Shopnc {
             @Override
             public void onResponse(JSONObject response) {
                 try {
+                    //TODO 处理登录失败
                     JSONObject data = response.getJSONObject("datas");
                     String key = data.getString("key");
                     String username = data.getString("username");
