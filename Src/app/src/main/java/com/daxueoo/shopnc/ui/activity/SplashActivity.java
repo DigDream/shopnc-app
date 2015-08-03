@@ -34,7 +34,7 @@ public class SplashActivity extends BaseActivity {
             @Override
             public void onAnimationEnd(Animation arg0) {
                 // TODO Auto-generated method stub
-                Intent intent = new Intent(SplashActivity.this, MainTabActivity.class);
+                Intent intent = new Intent(SplashActivity.this, ScollerViewActivity.class);
                 startActivity(intent);
                 finish();
             }

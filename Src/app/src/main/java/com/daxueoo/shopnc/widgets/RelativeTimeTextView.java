@@ -71,9 +71,6 @@ public class RelativeTimeTextView extends TextView {
     }
 
     private void updateTextDisplay() {
-        /*
-        * TODO: Perform validation
-        */
         if (this.mReferenceTime == -1L)
             return;
         setText(TextUtils.getRelativeTimeDisplayString(getContext(), mReferenceTime));
