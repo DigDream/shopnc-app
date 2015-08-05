@@ -2,4 +2,4 @@
 <com.jeremyfeinstein.slidingmenu.lib.SlidingMenu xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/slidingmenumain"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent" /><!-- From: file:/home/user/test/Shopnc/library/res/layout/slidingmenumain.xml --><!-- From: file:/home/user/test/Shopnc/library/build/intermediates/bundles/debug/res/layout/slidingmenumain.xml -->
+    android:layout_height="fill_parent" /><!-- From: file:/F:/DigDream/app/shopnc-app/Src/library/res/layout/slidingmenumain.xml --><!-- From: file:/F:/DigDream/app/shopnc-app/Src/library/build/intermediates/bundles/debug/res/layout/slidingmenumain.xml -->

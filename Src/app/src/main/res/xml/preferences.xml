@@ -5,7 +5,7 @@
         android:title="个人信息">
 
         <Preference
-            android:title="注销" />
+            android:title="账号管理" />
 
         <CheckBoxPreference
             android:key="checkbox_preference"
@@ -32,4 +32,16 @@
 
     </PreferenceCategory>
 
+
+    <PreferenceCategory
+        android:title="exit">
+
+        <PreferenceScreen
+            android:summary=""
+            android:key="tuichu"
+            android:title="退出登录"
+            >
+
+        </PreferenceScreen>
+    </PreferenceCategory>
 </PreferenceScreen>

@@ -1,10 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
+    //编译SDK的版本
     compileSdkVersion 22
+    //build tools的版本
     buildToolsVersion "22.0.1"
 
     defaultConfig {
+        //应用的包名
         applicationId "com.daxueoo.shopnc"
         minSdkVersion 15
         targetSdkVersion 22
@@ -12,7 +15,20 @@ android {
         versionName "1.0"
     }
     buildTypes {
+        ebug {
+            // 显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+
+            versionNameSuffix "-debug"
+            minifyEnabled false
+            zipAlignEnabled false
+            shrinkResources false
+            signingConfig signingConfigs.debug
+        }
         release {
+            // 移除无用的resource文件
+            shrinkResources true
+            //是否就行混淆
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
@@ -20,18 +36,23 @@ android {
 }
 
 ext {
+    //robobinding数据绑定
     robobindingVersion = 'latest.integration'
 }
 
 dependencies {
+    //添加远程开源库
     compile('cn.trinea.android.view.autoscrollviewpager:android-auto-scroll-view-pager:1.1.2') {
         exclude module: 'support-v4'
     }
+    // 编译libs目录下的所有jar包
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'in.srain.cube:ultra-ptr:1.0.10'
     compile 'in.srain.cube:cube-sdk:1.0.44@aar'
     compile "org.robobinding:robobinding:$robobindingVersion"
-    compile 'com.android.support:appcompat-v7:22.2.0'
+    //支持的版本
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    //引入volley的版本，添加远程开源库
     compile 'com.mcxiaoke.volley:library:1.0.18'
     compile 'com.getbase:floatingactionbutton:1.10.0'
     compile 'com.andreabaccega:android-form-edittext:1.2.1@aar'
