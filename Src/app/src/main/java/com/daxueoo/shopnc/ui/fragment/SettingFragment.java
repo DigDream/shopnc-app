@@ -9,6 +9,7 @@ import android.preference.PreferenceScreen;
 import com.daxueoo.shopnc.R;
 import com.daxueoo.shopnc.ui.activity.LoginActivity;
 import com.daxueoo.shopnc.ui.activity.SettingActivity;
+import com.daxueoo.shopnc.utils.SharedPreferencesUtils;
 
 /**
  * Created by user on 15-8-2.
@@ -32,8 +33,11 @@ public class SettingFragment extends PreferenceFragment {
          intent.setClass(getActivity(),LoginActivity.class);
     ;
          startActivity(intent);
+         //修改工具类，添加了一个删除的方法，然后在这里调用即可
+         SharedPreferencesUtils.clearParam(getActivity(),LoginActivity.class);
 
-         return true;
+
+             return true;
      }
         return  false;
     }

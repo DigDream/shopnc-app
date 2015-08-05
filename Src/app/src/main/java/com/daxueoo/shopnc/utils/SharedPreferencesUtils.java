@@ -74,4 +74,12 @@ public class SharedPreferencesUtils {
 
         return null;
     }
+    //删除的方法
+    public static void clearParam(Context context , Object object){
+        String type = object.getClass().getSimpleName();
+        SharedPreferences sp = context.getSharedPreferences(FILE_NAME, Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sp.edit();
+
+        sp.edit().clear().commit();
+    }
 }
