@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/home/user/test/Shopnc/library/assets"/></dataSet><dataSet config="release"><source path="/home/user/test/Shopnc/library/src/release/assets"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="E:\Project\shopnc-app\Src\library\assets"/></dataSet><dataSet config="release"><source path="E:\Project\shopnc-app\Src\library\src\release\assets"/></dataSet></merger>

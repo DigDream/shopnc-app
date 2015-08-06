@@ -26,6 +26,11 @@
     <color name="txt_at_blue">#507daf</color>
     <color name="bg_gray_bar">#f9f9f9</color>
     <color name="divider_gray">#d7d7d7</color>
+    <color name="divide">#ffeeeeee</color>
+    <color name="divide_line">#ffdddddd</color>
+    <color name="stand_bg">#fff6f6f6</color>
+    <color name="task_list_head">#ffe4e4e4</color>
+    <color name="white_pressed">#ffd5d5d5</color>
 
     <color name="holo_selector_pressed">#8033b5e5</color>
     <color name="window_background">#e6e6e6</color>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="E:\Project\shopnc-app\Src\app\build\intermediates\exploded-aar\com.andreabaccega\android-form-edittext\1.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="7ad0f5790120c01628b83992484ae1c7ee884b09">
+        <dex dex="E:\Project\shopnc-app\Src\app\build\intermediates\pre-dexed\debug\classes-30cc10521ecddc7fc969cafee8ed402028df7eec.jar" />
+    </item>
+    <item
+        jar="E:\Project\shopnc-app\Src\app\build\intermediates\exploded-aar\com.getbase\floatingactionbutton\1.10.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="078cad8ebaa25b1eb1790bd622b3a8ae27c9cc7a">
+        <dex dex="E:\Project\shopnc-app\Src\app\build\intermediates\pre-dexed\debug\classes-1cf43881e1ed341514b264038fac5c587bbad193.jar" />
+    </item>
+    <item
+        jar="E:\Project\shopnc-app\Src\app\build\intermediates\exploded-aar\in.srain.cube\ultra-ptr\1.0.10\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f7aa9a64408679b54260b859ae8eb723b69ecd30">
+        <dex dex="E:\Project\shopnc-app\Src\app\build\intermediates\pre-dexed\debug\classes-a3b710c690c14d6dc803e7e9c30947a7f8c825be.jar" />
+    </item>
+    <item
+        jar="E:\Project\shopnc-app\Src\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
+        <dex dex="E:\Project\shopnc-app\Src\app\build\intermediates\pre-dexed\debug\classes-8f0847d0c3077d69a66c1ec57e867ecbb60c5558.jar" />
+    </item>
+    <item
+        jar="E:\android-sdk_r24.3.3-windows\android-sdk-windows\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="E:\Project\shopnc-app\Src\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.0-097e781d0af75bb422cf6fe5b79b9abac39211d4.jar" />
+    </item>
+    <item
+        jar="C:\Users\guodont\.gradle\caches\modules-2\files-2.1\org.robobinding\robobinding\0.8.10\528d6281125287115837689333b9bbede4fdfd13\robobinding-0.8.10.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="528d6281125287115837689333b9bbede4fdfd13">
+        <dex dex="E:\Project\shopnc-app\Src\app\build\intermediates\pre-dexed\debug\robobinding-0.8.10-b6b00b32014ef9d471f8d33b3b2540bb4a4c3dd1.jar" />
+    </item>
+    <item
+        jar="E:\Project\shopnc-app\Src\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="E:\Project\shopnc-app\Src\app\build\intermediates\pre-dexed\debug\classes-d54ed22edbb31e1ff9efd2deb2e2014f6c18c9e0.jar" />
+    </item>
+    <item
+        jar="C:\Users\guodont\.gradle\caches\modules-2\files-2.1\com.google.guava\guava\18.0\cce0823396aa693798f8882e64213b1772032b09\guava-18.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="cce0823396aa693798f8882e64213b1772032b09">
+        <dex dex="E:\Project\shopnc-app\Src\app\build\intermediates\pre-dexed\debug\guava-18.0-090cefcb5c925807245a6b165b3193c4f73ed3b9.jar" />
+    </item>
+    <item
+        jar="E:\Project\shopnc-app\Src\app\build\intermediates\exploded-aar\Src\library\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="2a8b86ab84a31c621d84a2402dbf5799690b1a6c">
+        <dex dex="E:\Project\shopnc-app\Src\app\build\intermediates\pre-dexed\debug\classes-010d3be006ce9894b77bae0f511189fd2f012b0b.jar" />
+    </item>
+    <item
+        jar="E:\Project\shopnc-app\Src\app\build\intermediates\exploded-aar\in.srain.cube\cube-sdk\1.0.44\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ab3e30bc50e6b7f859b4971bfc897cd107a7b6c5">
+        <dex dex="E:\Project\shopnc-app\Src\app\build\intermediates\pre-dexed\debug\classes-11515f15e619210eb9ae54ad7b903ffa09999ba0.jar" />
+    </item>
+    <item
+        jar="C:\Users\guodont\.gradle\caches\modules-2\files-2.1\com.mcxiaoke.volley\library\1.0.18\38da306aafee11459cd935a01d2c92a98dc670a4\library-1.0.18.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="38da306aafee11459cd935a01d2c92a98dc670a4">
+        <dex dex="E:\Project\shopnc-app\Src\app\build\intermediates\pre-dexed\debug\library-1.0.18-9c8ac421160757f473bce65ddc3dd32e9394c9b5.jar" />
+    </item>
+    <item
+        jar="E:\Project\shopnc-app\Src\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\libs\internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="E:\Project\shopnc-app\Src\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-48cf33fd278702eb769ba19d43852a86ab707eab.jar" />
+    </item>
+    <item
+        jar="C:\Users\guodont\.gradle\caches\modules-2\files-2.1\cn.trinea.android.view.autoscrollviewpager\android-auto-scroll-view-pager\1.1.2\8ad9237a8b0965696ea32ca9c1de173e082eaad4\android-auto-scroll-view-pager-1.1.2.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8ad9237a8b0965696ea32ca9c1de173e082eaad4">
+        <dex dex="E:\Project\shopnc-app\Src\app\build\intermediates\pre-dexed\debug\android-auto-scroll-view-pager-1.1.2-910de5f71de61fc0467fece1b564b34088f1ee08.jar" />
+    </item>
+
+</items>

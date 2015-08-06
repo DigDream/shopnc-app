@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="debug"><source path="/home/user/test/Shopnc/library/build/intermediates/bundles/debug/assets"/></dataSet><dataSet config="main"><source path="/home/user/test/Shopnc/library/src/androidTest/assets"/></dataSet></merger>
+<merger version="3"><dataSet config="debug"><source path="E:\Project\shopnc-app\Src\library\build\intermediates\bundles\debug\assets"/></dataSet><dataSet config="main"><source path="E:\Project\shopnc-app\Src\library\src\androidTest\assets"/></dataSet></merger>

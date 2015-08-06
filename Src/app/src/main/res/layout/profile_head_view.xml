@@ -35,28 +35,99 @@
         android:dividerPadding="12dp"
         android:layout_alignParentBottom="true">
 
-        <TextView
-            android:id="@+id/tv_register"
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="14dp"
-            android:text="注册"
             android:layout_weight="1"
-            android:textSize="14sp"
+            android:padding="14dp"
             android:gravity="center"
-            android:layout_gravity="center"
-            android:textColor="#ffffff" />
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/tv_point_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="4dp"
+                android:text="12"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:gravity="end"
+                android:layout_gravity="center"
+                android:textColor="#ffffff" />
+            <TextView
+                android:id="@+id/tv_point"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="4dp"
+                android:text="积分"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:gravity="start"
+                android:layout_gravity="center"
+                android:textColor="#ffffff" />
+        </LinearLayout>
 
-        <TextView
-            android:id="@+id/tv_login"
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="14dp"
-            android:text="登录"
             android:layout_weight="1"
-            android:textSize="14sp"
             android:gravity="center"
-            android:layout_gravity="center"
-            android:textColor="#ffffff" />
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/tv_fllowers_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="4dp"
+                android:text="12"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:gravity="end"
+                android:layout_gravity="center"
+                android:textColor="#ffffff" />
+            <TextView
+                android:id="@+id/tv_followers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="4dp"
+                android:text="粉丝"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:gravity="start"
+                android:layout_gravity="center"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="14dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/tv_following_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="4dp"
+                android:text="12"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:gravity="end"
+                android:layout_gravity="center"
+                android:textColor="#ffffff" />
+            <TextView
+                android:id="@+id/tv_following"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="4dp"
+                android:text="关注"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:gravity="start"
+                android:layout_gravity="center"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+
     </LinearLayout>
 </RelativeLayout>

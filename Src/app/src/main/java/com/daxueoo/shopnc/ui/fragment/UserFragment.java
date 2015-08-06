@@ -29,46 +29,14 @@ import java.util.List;
 public class UserFragment extends BaseFragment {
 
     private View view;
-    private ListView mListView;
-    private List<UserMessage> list = makeList();
     private PullToZoomScrollViewEx scrollView;
     private TextView mUsername;
-
-    private List<UserMessage> makeList() {
-        List<UserMessage> l = new ArrayList<UserMessage>();
-        int i = 0;
-        UserMessage p1 = new UserMessage();
-        p1.setId("id" + i);
-        i = i + 1;
-        p1.setName("无线弱口令密码检测");
-        l.add(p1);
-
-        UserMessage p2 = new UserMessage();
-        p2.setId("id" + i);
-        i = i + 1;
-        p2.setName("无线路由器管理地址检测");
-        l.add(p2);
-
-        UserMessage p3 = new UserMessage();
-        p3.setId("id" + i);
-        i = i + 1;
-        p3.setName("路由器管理密码检测");
-        l.add(p3);
-
-        UserMessage p4 = new UserMessage();
-        p4.setId("id" + i);
-        i = i + 1;
-        p4.setName("DNS服务器地址管理");
-        l.add(p4);
-
-        return l;
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view = View.inflate(activity, R.layout.fragment_user, null);
 
-        new TitleBuilder(view).setTitleText("我的").setRightImage(R.mipmap.ic_launcher).setRightOnClickListener(new View.OnClickListener() {
+        new TitleBuilder(view).setTitleText("我的").setRightImage(R.drawable.icon_setting).setRightOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ToastUtils.showToast(activity, "right click~", Toast.LENGTH_SHORT);
@@ -87,7 +55,6 @@ public class UserFragment extends BaseFragment {
         super.onViewCreated(view, savedInstanceState);
 
         initPulltozoom();
-        initListView();
     }
 
     private void initPulltozoom() {
@@ -110,26 +77,7 @@ public class UserFragment extends BaseFragment {
 
         mUsername = (TextView) headView.findViewById(R.id.tv_user_name);
         mUsername.setText((String) SharedPreferencesUtils.getParam(this.getActivity(), "username", "dubuqingfeng"));
-        mListView = (ListView) contentView.findViewById(R.id.list_fragment_user);
-    }
-
-    private void initListView() {
-        ArrayList<HashMap<String, String>> myArrayList = new ArrayList<HashMap<String, String>>();
-
-        for (UserMessage p : list) {
-            HashMap<String, String> map = new HashMap<String, String>();
-            map.put("id", p.getId());
-            map.put("name", p.getName());
-            myArrayList.add(map);
-        }
-
-        SimpleAdapter mySimpleAdapter = new SimpleAdapter(this.getActivity(), myArrayList,// 数据源
-                R.layout.item_list_user, new String[]{"id", "name"},// HashMap中的两个key值
-                // itemTitle和itemContent
-                new int[]{R.id.itemID, R.id.tv_left_title});
-
-        mListView.setAdapter(mySimpleAdapter);
-
-        SystemUtils.setListViewHeightBasedOnChildren(mListView);
+//        mListView = (ListView) contentView.findViewById(R.id.list_fragment_user);
+        //TODO改为linerlayout布局
     }
 }

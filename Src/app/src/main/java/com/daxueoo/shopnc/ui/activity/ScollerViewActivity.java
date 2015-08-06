@@ -41,7 +41,7 @@ public class ScollerViewActivity extends Activity implements OnScrollChangedList
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				startActivity(new Intent(ScollerViewActivity.this,MainTabActivity.class));
-				AnimationUtil.finishActivityAnimation(ScollerViewActivity.this);
+//				AnimationUtil.finishActivityAnimation(ScollerViewActivity.this);
 			}
 		});
 	}
