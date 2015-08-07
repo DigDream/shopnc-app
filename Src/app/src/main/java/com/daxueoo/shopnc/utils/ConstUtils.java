@@ -5,7 +5,7 @@ package com.daxueoo.shopnc.utils;
  */
 public class ConstUtils {
 
-    public static final String client_type = "android";
+    public static final String CLIENT_TYPE = "android";
 
     public static final String web_type_mall = "mall";
 

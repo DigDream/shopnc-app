@@ -52,7 +52,7 @@ public class RegisterActivity extends BaseActivity {
                     Log.e(TAG, "test" + et_password.getText().toString());
                     //发送post请求
 
-                    Shopnc.register(RegisterActivity.this, et_username.getText().toString(), et_password.getText().toString(), et_email.getText().toString(), ConstUtils.client_type);
+                    Shopnc.register(RegisterActivity.this, et_username.getText().toString(), et_password.getText().toString(), et_email.getText().toString(), ConstUtils.CLIENT_TYPE);
                     //跳转Activity
                     Intent intent = new Intent();
                     intent.setClass(RegisterActivity.this, MainTabActivity.class);

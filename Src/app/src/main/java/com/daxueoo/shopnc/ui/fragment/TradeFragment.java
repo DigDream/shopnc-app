@@ -29,9 +29,13 @@ public class TradeFragment extends BaseFragment {
             }
         });
 
-        atachLeftMenu(getActivity());
-
         return view;
+    }
+
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        //atachLeftMenu(getActivity());
     }
 
     public void atachLeftMenu(Activity pActivity){

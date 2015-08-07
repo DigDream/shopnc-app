@@ -25,7 +25,7 @@ public class SystemUtils {
 
     /**
      * 在scrollview里
-     * 设置ListView高度
+     * 动态设置ListView高度
      * @param listView
      */
     public static void setListViewHeightBasedOnChildren(ListView listView) {

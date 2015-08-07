@@ -54,7 +54,7 @@ public class LoginActivity extends BaseActivity {
                     Log.e(TAG, "test" + et_username.getText().toString());
                     Log.e(TAG, "test" + et_password.getText().toString());
                     //发送post请求
-                    Shopnc.login(LoginActivity.this, et_username.getText().toString(), et_password.getText().toString(), ConstUtils.client_type);
+                    Shopnc.login(LoginActivity.this, et_username.getText().toString(), et_password.getText().toString(), ConstUtils.CLIENT_TYPE);
 
                     //跳转Activity
                     Intent intent = new Intent();

@@ -29,7 +29,7 @@ import uk.co.senab.photoview.PhotoViewAttacher;
  * Created by user on 15-7-30.
  */
 
-public class TopicAdapter extends BaseAdapter {
+public class ThemeAdapter extends BaseAdapter {
     /**
      * 上下文对象
      */
@@ -38,7 +38,7 @@ public class TopicAdapter extends BaseAdapter {
 
     private ImageLoader mImageLoader;
 
-    public TopicAdapter(Context ctx, List<TopicMessage> data) {
+    public ThemeAdapter(Context ctx, List<TopicMessage> data) {
         mContext = ctx;
         this.data = data;
 
@@ -67,9 +67,9 @@ public class TopicAdapter extends BaseAdapter {
         ViewHolder holder;
         if (convertView == null) {
 
-            convertView = LayoutInflater.from(mContext).inflate(R.layout.item_topic, parent, false);
+            convertView = LayoutInflater.from(mContext).inflate(R.layout.item_theme, parent, false);
             holder = new ViewHolder();
-            holder.topiclist = (RelativeLayout) convertView.findViewById(R.id.topiclist);
+            holder.themeList = (RelativeLayout) convertView.findViewById(R.id.themeList);
 
             holder.tv_title = (TextView) convertView.findViewById(R.id.tv_topic_title);
             holder.tv_desc = (TextView) convertView.findViewById(R.id.tv_topic_content);
@@ -106,7 +106,7 @@ public class TopicAdapter extends BaseAdapter {
 
     static class ViewHolder {
 
-        RelativeLayout topiclist;
+        RelativeLayout themeList;
         TextView tv_title;
         TextView tv_desc;
         TextView tv_views;

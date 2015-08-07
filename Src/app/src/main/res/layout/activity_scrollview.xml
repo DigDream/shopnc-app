@@ -100,7 +100,7 @@
                 android:src="@drawable/feature_arrow_up" />
 
             <TextView 
-                android:id="@+id/tvInNew"
+                android:id="@+id/tv_login"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="35dp"
@@ -109,14 +109,22 @@
                 android:textSize="22sp"
                 android:background="@drawable/btn_innew"
                 android:textColor="@android:color/white"
-                android:text="立即体验"
+                android:text="立即登录"
                 />
-            
-            <ImageView
+
+            <TextView
+                android:id="@+id/tv_main"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="35dp"
-                android:src="@drawable/feature_jobs_txt" />
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:background="@drawable/btn_innew"
+                android:textColor="@android:color/white"
+                android:text="随便看看"
+                />
         </LinearLayout>
     </com.daxueoo.shopnc.widgets.scrollView.MyScrollView>
 </RelativeLayout>
