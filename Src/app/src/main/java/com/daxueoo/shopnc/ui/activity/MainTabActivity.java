@@ -15,6 +15,7 @@ import com.daxueoo.shopnc.sdk.Shopnc;
 import com.daxueoo.shopnc.ui.fragment.CircleFragment;
 import com.daxueoo.shopnc.ui.fragment.HomeFragment;
 import com.daxueoo.shopnc.ui.fragment.MallFragment;
+//import com.daxueoo.shopnc.ui.fragment.TradeFragment;
 import com.daxueoo.shopnc.ui.fragment.TradeFragment;
 import com.daxueoo.shopnc.ui.fragment.UserFragment;
 import com.daxueoo.shopnc.utils.ConstUtils;
@@ -31,7 +32,7 @@ public class MainTabActivity extends FragmentActivity {
     private FragmentTabHost mTabHost;
     private RadioGroup mTabRg;
 
-    private final Class[] fragments = {HomeFragment.class, MallFragment.class, CircleFragment.class, TradeFragment.class, UserFragment.class};
+    private final Class[] fragments = {HomeFragment.class, MallFragment.class, TradeFragment.class,S CircleFragment.class,  UserFragment.class};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

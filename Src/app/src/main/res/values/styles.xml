@@ -65,5 +65,19 @@
         <item name="android:gravity">center</item>
         <item name="android:background">@color/white</item>
     </style>
+        <!---->
+    <style name="sdw_white">
+        <item name="android:shadowColor">#7fffffff</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">0.65</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="title_text_20_style" parent="@style/sdw_white">
+        <item name="android:textColor">@color/WHITE</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
 
 </resources>
