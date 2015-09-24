@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid
+        android:color="@android:color/transparent"
+        />
+    <stroke
+        android:width="0.5px"
+        android:color="@color/list_divider"
+        />
+    <padding
+        android:bottom="-1dp"
+        android:left="-1dp"
+        android:right="1dp"
+        android:top="0dp" />
+</shape>

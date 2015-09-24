@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical" >
+
+    <Button
+        android:id="@id/CancelBtn"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="right"
+        android:visibility="visible"
+        android:background="@drawable/cancel_scan_selector" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="vertical" >
+
+        <SurfaceView
+            android:id="@id/preview_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <com.daxueoo.shopnc.scan.ViewfinderView
+            android:id="@id/viewfinder_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/transparent" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="bottom">
+        <LinearLayout
+            android:id="@+id/ll_scan_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_scan_goods"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_tran2gray_sel"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/icon_scan_goods_normal" />
+
+                <TextView
+                    style="@style/TextViewBody"
+                    android:text="@string/tv_scan_goods"
+                    android:textColor="@color/txt_gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_scan_shebei"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_tran2gray_sel"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/icon_scan_shebei_normal" />
+
+                <TextView
+                    style="@style/TextViewBody"
+                    android:text="@string/tv_scan_shebei"
+                    android:textColor="@color/txt_gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_scan_lan"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_tran2gray_sel"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/icon_scan_lab_normal" />
+
+                <TextView
+                    style="@style/TextViewBody"
+                    android:text="@string/tv_scan_lab"
+                    android:textColor="@color/txt_gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_scan_article"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_tran2gray_sel"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/icon_scan_article_normal" />
+                <TextView
+                    style="@style/TextViewBody"
+                    android:text="@string/tv_scan_article"
+                    android:textColor="@color/txt_gray" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </FrameLayout>
+
+</LinearLayout>

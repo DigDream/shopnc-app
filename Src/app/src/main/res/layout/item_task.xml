@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/item_ll_task"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:gravity="center_vertical"
+    android:background="@color/white"
+    android:paddingLeft="15sp"
+    android:paddingRight="15sp">
+
+    <View
+        android:id="@+id/view_task_head"
+        android:layout_width="7dp"
+        android:layout_height="7dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/icon_likes"
+        android:focusable="false"/>
+
+    <TextView
+        android:id="@+id/titleProject"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:focusable="false"
+        android:singleLine="true"
+        android:text="@string/btn_user_send"
+        android:textColor="@color/txt_light_gray"
+        android:textSize="13sp"/>
+
+    <TextView
+        android:id="@+id/tv_task_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:padding="5dp"
+        android:text="状态"/>
+
+
+</LinearLayout>

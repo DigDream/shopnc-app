@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#464646"
+    android:orientation="vertical">
+
+    <!-- 顶部个人基本信息 -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dip">
+
+        <ImageView
+            android:id="@+id/right_permsg_center_img_usericon"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="5dip"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/right_permsg_center_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="13dip"
+            android:layout_toRightOf="@id/right_permsg_center_img_usericon"
+            android:text="AABBV"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:id="@+id/right_permsg_center_img_icon"
+            android:layout_width="15dip"
+            android:layout_height="15dip"
+            android:layout_alignLeft="@id/right_permsg_center_tv_name"
+            android:layout_below="@id/right_permsg_center_tv_name"
+            android:layout_toRightOf="@id/right_permsg_center_img_usericon"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/right_permsg_center_tv_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/right_permsg_center_img_icon"
+            android:layout_below="@id/right_permsg_center_tv_name"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="2dip"
+            android:layout_toRightOf="@id/right_permsg_center_img_icon"
+            android:text="科长"
+            android:textSize="10sp"/>
+
+        <ImageButton
+            android:id="@+id/right_permsg_center_imgbtn_select"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@mipmap/ic_launcher"/>
+    </RelativeLayout>
+
+    <!-- 中间三个button  我的跟帖，我的收藏，消息推送 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/right_permsg_center_btn_thread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:text="我的跟帖"
+            />
+
+        <Button
+            android:id="@+id/right_permsg_center_btn_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:text="我的收藏"
+            />
+
+        <Button
+
+            android:id="@+id/right_permsg_center_btn_msgpush"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:text="消息推送"
+            />
+    </LinearLayout>
+
+
+</LinearLayout> 

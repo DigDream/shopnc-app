@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:id="@+id/rotate_header_web_view_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:ptr_duration_to_close="200"
+        app:ptr_duration_to_close_header="1000"
+        app:ptr_keep_header_when_refresh="true"
+        app:ptr_pull_to_fresh="false"
+        app:ptr_ratio_of_header_height_to_refresh="1.2"
+        app:ptr_resistance="1.7">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
+                    android:id="@+id/view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_qa_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ll_qa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingBottom="9dp"
+                        android:paddingTop="9dp">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_qa_daren"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="1">
+                            <ImageView
+                                android:id="@+id/iv_qa_daren"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/home_task"/>
+                            <TextView
+                                android:id="@+id/tv_qa_daren"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/iv_qa_daren"
+                                android:layout_marginTop="5dp"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="@string/btn_home_q_daren"
+                                android:textSize="13sp"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_qa_daren"
+                                android:layout_toRightOf="@+id/iv_qa_daren"
+                                android:layout_marginTop="5dp"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="@string/btn_home_q_daren2"
+                                android:textSize="9sp"
+                                />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_qa_zhuanjia"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="1">
+                            <ImageView
+                                android:id="@+id/iv_qa_zhuanjia"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/home_serve"/>
+                            <TextView
+                                android:id="@+id/tv_qa_zhuanjia"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/iv_qa_zhuanjia"
+                                android:layout_marginTop="5dp"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="@string/btn_home_q_zhuanjia"
+                                android:textSize="13sp"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_qa_zhuanjia"
+                                android:layout_toRightOf="@+id/iv_qa_zhuanjia"
+                                android:layout_marginTop="5dp"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="@string/btn_home_q_zhuanjia2"
+                                android:textSize="9sp"
+                                />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <include layout="@layout/divide_1_12"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:layout_gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginStart="18dp"
+                        android:drawableLeft="@drawable/icon_home_notice"
+                        android:text=" 资讯"
+                        android:textSize="14sp"/>
+
+                    <com.daxueoo.shopnc.widgets.VerticalScrollTextView
+                        android:id="@+id/tv_notice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginStart="18dp"
+                        android:textColor="@color/color_notice_title"
+                        android:text="大学圈圈公告内容"
+                        android:visibility="gone"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_notice_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:maxLines="1"
+                        android:text="内容。。。。"
+                        android:textSize="14sp"
+                        />
+
+                </LinearLayout>
+
+                <include layout="@layout/divide_13_top" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <GridView
+                        android:id="@+id/gv_home_custom"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:numColumns="2">
+
+                    </GridView>
+                </LinearLayout>
+
+                <include layout="@layout/divide_1_12"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="7dp"
+                    android:paddingBottom="7dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginStart="18dp"
+                        android:drawableLeft="@drawable/icon_home_theme"
+                        android:text=" 热门精选"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+                <in.srain.cube.views.loadmore.LoadMoreListViewContainer
+                    android:id="@+id/load_more_list_view_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/cube_mints_white">
+
+                    <com.daxueoo.shopnc.widgets.ForScrollViewListView
+                        android:id="@+id/list_fragment_topic"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="1dp"
+                        android:clipToPadding="false"
+                        android:divider="@color/bg_agray"
+                        android:dividerHeight="1px"
+                        android:listSelector="@android:color/transparent"
+                        android:paddingBottom="8dp"
+                        android:scrollbars="none"/>
+
+                </in.srain.cube.views.loadmore.LoadMoreListViewContainer>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+</LinearLayout>

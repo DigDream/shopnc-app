@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:id="@+id/rl_circle_profile"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:id="@+id/tv_circle_profile_name"
+        android:text="大学圈圈"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        />
+    <LinearLayout
+        android:id="@+id/ll_circle_profile_master"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/tv_circle_profile_name">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="圈主:" />
+        <TextView
+            android:id="@+id/tv_circle_profile_master"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="guodont" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:layout_below="@+id/ll_circle_profile_master">
+
+        <TextView
+            android:id="@+id/tv_circle_profile_desc"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:maxLines="13"
+            android:text="本圈子以人为本，给广大网友提供干净的场所。" />
+
+        <Button
+            android:id="@+id/btn_circle_profile_op"
+            android:layout_width="wrap_content"
+            android:layout_height="39dp"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:gravity="center"
+            android:background="@drawable/bg_btn"
+            android:textColor="@color/txt_light_gray"
+            android:text="申请加入圈子"/>
+    </LinearLayout>
+
+</RelativeLayout>

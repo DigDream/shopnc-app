@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/tv_topic_views"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:layout_weight="1"
+        android:drawableLeft="@drawable/icon_views"
+        android:drawableStart="@drawable/icon_views"
+        android:gravity="center"
+        android:text="119"/>
+
+    <TextView
+        android:id="@+id/tv_topic_replies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:layout_weight="1"
+        android:drawableLeft="@drawable/icon_replies"
+        android:drawableStart="@drawable/icon_replies"
+        android:gravity="center"
+        android:text="34"/>
+
+    <TextView
+        android:id="@+id/tv_topic_likes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:layout_weight="1"
+        android:drawableLeft="@drawable/icon_likes"
+        android:drawableStart="@drawable/icon_likes"
+        android:gravity="center"
+        android:text="32"/>
+</LinearLayout>

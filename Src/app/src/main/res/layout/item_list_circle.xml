@@ -1,0 +1,68 @@
+<RelativeLayout
+    android:id="@+id/rl_circle"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/itemimageview"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:background="@drawable/default_group_logo"
+        android:scaleType="centerCrop"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/itemimageview"
+        android:background="#70000000">
+
+        <TextView
+            android:id="@+id/tv_circle_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:gravity="center_vertical"
+            android:text="@string/app_name"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="14sp"
+            android:textColor="@color/white_pressed"
+            />
+
+        <TextView
+            android:id="@+id/tv_circle_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/tv_circle_title"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="@string/app_name"
+            android:textSize="11sp"
+            android:textColor="@color/white_pressed"
+            />
+
+        <TextView
+            android:id="@+id/tv_circle_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_below="@id/tv_circle_desc"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textSize="13sp"
+            android:textColor="@color/white_pressed"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>  

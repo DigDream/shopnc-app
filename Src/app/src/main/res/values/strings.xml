@@ -1,0 +1,137 @@
+<resources>
+    <string name="app_name">Shopnc</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="just_now">Just now</string>
+
+    <!-- tab_tv底部选项卡的文字-->
+    <string name="tab_tv_index">首页</string>
+    <string name="tab_tv_mall">商城</string>
+    <string name="tab_tv_circle">圈子</string>
+    <string name="tab_tv_trade">发现</string>
+    <string name="tab_tv_mine">我的</string>
+
+    <!-- 登录和注册页的按钮 -->
+    <string name="btn_login">登录</string>
+    <string name="btn_register">register</string>
+    
+    <!-- 我的界面的按钮文字 -->
+    <string name="btn_user_trade">我的交易</string>
+    <string name="btn_user_order">我的订单</string>
+    <string name="btn_user_send">我的发帖</string>
+    <string name="btn_user_posts">我的回帖</string>
+    <string name="btn_user_fav_goods">商品收藏</string>
+    <string name="btn_user_fav_serve">服务收藏</string>
+    <string name="btn_user_fav_trade">交易收藏</string>
+    
+    <!-- 首页界面的按钮文字 -->
+    <string name="btn_home_serve">服务</string>
+    <string name="btn_home_my_message">我的消息</string>
+    <string name="btn_home_load_more">发现更多</string>
+    <string name="btn_home_q_daren">问达人</string>
+    <string name="btn_home_q_daren2">科研达人来帮忙</string>
+    <string name="btn_home_q_zhuanjia">问专家</string>
+    <string name="btn_home_q_zhuanjia2">专家教授来服务</string>
+
+    <!-- -->
+    <string name="et_text_username">请输入用户名</string>
+    <string name="et_text_password">请输入密码</string>
+    <string name="et_text_email">请输入邮箱</string>
+
+    <string name="dialog_ok">确定</string>
+    <string name="dialog_cancel">取消</string>
+
+    <string name="tv_register">新用户注册</string>
+
+    <string name="tv_setting">设置</string>
+
+    <!-- 侧滑 -->
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <string name="network_fail">网络错误</string>
+
+    <!-- Zxing -->
+    <string name="scan">扫描</string>
+
+    <!--话题详情-->
+    <string name="et_text_reply">请在此处回复</string>
+    <string name="btn_reply_send">回复</string>
+
+    <!--创建话题-->
+    <string name="et_text_topic_name">请输入话题名称...</string>
+    <string name="et_text_topic_content">请输入话题内容...</string>
+    <string name="title_activity_about">AboutActivity</string>
+
+    <!--申请加入圈子-->
+    <string name="et_text_join_reason">成为圈中成员之前，希望您能告诉我们是什么原因使您加入到本圈？</string>
+    <string name="et_text_join_speciality">在这里写下你的个性介绍，是让别的圈友了解并熟悉你的最佳方法。</string>
+    <string name="title_join_title">申请加入圈子</string>
+
+    <!--创建圈子-->
+    <string name="et_text_circle_name">为您的圈子起个名字</string>
+    <string name="et_text_circle_desc">圈子简介</string>
+    <string name="et_text_circle_tag">圈子标签</string>
+    <string name="et_text_circle_apply_reason">申请理由</string>
+    <string name="et_text_circle_category">选择圈子分类</string>
+
+    <!--圈子-->
+    <string name="tv_text_circle_qa">本板块求助</string>
+
+    <!--创建任务-->
+    <string name="et_text_task_name">请输入任务标题</string>
+    <string name="et_text_task_content">请输入任务描述</string>
+    <!-- 任务状态 -->
+    <string name="tv_finished">已完成</string>
+    <string name="tv_unfinished">未完成</string>
+    <!--首页动态-->
+    <string name="tv_in_where">发布于</string>
+    <string name="title_activity_trade_detail">TradeDetailActivity</string>
+    <string name="title_activity_create_circle">CreateCircleActivity</string>
+    <string name="title_activity_join_circle">JoinCircleActivity</string>
+
+    <!--商品列表排序工具栏-->
+    <string name="tv_shop_new">新品</string>
+    <string name="tv_shop_price">价格</string>
+    <string name="tv_shop_hot">人气</string>
+    <string name="tv_shop_sell">销量</string>
+
+    <!--购物车-->
+    <string name="tv_cart_checkout">去结算</string>
+    <string name="tv_cart_back">再逛逛</string>
+    <string name="tv_cart_title">我的购物车</string>
+
+    <!--扫码界面-->
+    <string name="tv_scan_goods">商品</string>
+    <string name="tv_scan_shebei">设备</string>
+    <string name="tv_scan_lab">实验室</string>
+    <string name="tv_scan_article">文献</string>
+
+    <!--商城首页-->
+    <string name="et_text_mall_search">输入你想要的商品</string>
+    <string name="title_activity_custom">CustomActivity</string>
+    <string name="title_activity_circle_profile">CircleProfileActivity</string>
+
+    <!--创建任务-->
+    <string name="et_text_task_title">请输入任务标题</string>
+    <string name="et_text_task_desc">请输入任务描述</string>
+    <string name="et_text_task_time">时间</string>
+
+
+    <!--创建问题-->
+    <string name="et_text_qa_name">请输入问题名称...</string>
+    <string name="et_text_qa_content">请输入问题描述...</string>
+    <string name="tv_qa_">AboutActivity</string>
+</resources>

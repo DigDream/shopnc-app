@@ -1,0 +1,32 @@
+<RelativeLayout
+    android:id="@+id/rl_explore"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="left"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/itemimageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_task" />
+        <TextView
+            android:id="@+id/tv_explore_name"
+            style="@style/TextViewBody"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/btn_user_order"
+            android:textSize="12sp"
+            android:textColor="@color/txt_gray" />
+    </LinearLayout>
+
+</RelativeLayout>  

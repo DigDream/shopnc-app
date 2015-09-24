@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/topiclist"
+    android:layout_width="match_parent"
+    android:layout_height="165dp"
+    android:background="@color/white"
+    android:paddingBottom="5dp">
+
+    <TextView
+        android:id="@+id/tv_topic_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ellipsize="end"
+        android:fontFamily="RobotoSlab-Regular.ttf"
+        android:maxLines="1"
+        android:text="领导突然安排我明天去相亲，对女方几乎没有了解，求建议或攻略！"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_topic_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_topic_title"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/topic_content_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_topic_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="3"
+                android:ellipsize="end"
+                android:minLines="3"
+                android:maxLines="3"
+                android:text="我是一个懒人，平时喜欢做一些小工具帮自己分担一些工作。
+这是我一年前做的一个自动切图插件在我是用自己名字暂时随便取的，所以求助V友们帮忙想一个名字，
+然后我会做一个主页。
+像 Slicy 这个名字就不错可惜被用了。"
+                android:textColor="#737373"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <com.daxueoo.shopnc.widgets.RoundedImageView
+                    android:id="@+id/iv_topic_user_head"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:adjustViewBounds="true"
+                    android:maxHeight="24dp"
+                    android:maxWidth="24dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_default_avatar"
+                    app:bottomLeftRadius="50dp"
+                    app:bottomRightRadius="50dp"
+                    app:topLeftRadius="50dp"
+                    app:topRightRadius="50dp" />
+
+                <TextView
+                    android:id="@+id/tv_topic_views"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center_vertical"
+                    android:text="123445次"
+                    android:textColor="#aaa"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="9">
+
+            <ImageView
+                android:id="@+id/iv_topic_head"
+                android:layout_width="match_parent"
+                android:layout_height="116dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/icon_img_normal" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

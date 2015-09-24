@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_topic_head"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:background="@drawable/bg_white2gray_sel"
+    android:orientation="vertical" >
+
+    <include layout="@layout/include_avatar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/bg_agray"/>
+
+    <TextView
+        android:id="@+id/tv_topic_title"
+        style="@style/TextViewTitle"
+        android:paddingTop="10dp"
+        android:paddingLeft="16dp"
+        android:layout_marginBottom="5dp"
+        android:text="这是一个真实的故事" />
+
+    <TextView
+        android:id="@+id/tv_topic_content"
+        style="@style/TextViewBody"
+        android:layout_width="match_parent"
+        android:text="从前有个人来到了油坊桥,后来他变成了吴彦祖从前有个人来到了油坊桥,后来他变成了吴彦祖从前有个人来到了油坊桥,后来他变成了吴彦祖从前有个人来到了油坊桥,后来他变成了吴彦祖。"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" />
+
+    <include
+        android:id="@+id/include_status_image"
+        layout="@layout/include_status_image"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/include_retweeted_status"
+        layout="@layout/include_retweeted_status"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/ll_bottom_topic_op_bar"
+        layout="@layout/include_theme_op_bar" />
+
+</LinearLayout>

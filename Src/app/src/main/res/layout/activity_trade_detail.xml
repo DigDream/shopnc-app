@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_trade_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_titlebar" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_trade_title"
+                    style="@style/TextViewSubhead"
+                    android:layout_width="200dp"
+                    android:layout_weight="9"
+                    android:text="出售《哈利波特全集》  一套" />
+
+                <ImageView
+                    android:id="@+id/iv_trade_like"
+                    android:layout_width="42dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/icon_no_like" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_trade_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:adjustViewBounds="true"
+                android:maxHeight="280dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_launcher" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¥"
+                    android:textColor="@color/main_color"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/tv_trade_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="120"
+                    android:textColor="@color/main_color"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/tv_trade_views"
+                    android:layout_width="wrap_content"
+                    android:layout_height="14dp"
+                    android:layout_weight="9"
+                    android:drawableLeft="@drawable/icon_view"
+                    android:gravity=""
+                    android:text="119"
+                    android:textSize="11sp" />
+
+                <com.daxueoo.shopnc.widgets.RoundedImageView
+                    android:id="@+id/iv_trade_user_avatar"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_img_user_default"
+                    app:bottomLeftRadius="25dp"
+                    app:bottomRightRadius="25dp"
+                    app:topLeftRadius="25dp"
+                    app:topRightRadius="25dp" />
+
+                <TextView
+                    android:id="@+id/tv_trade_username"
+                    style="@style/TextViewBody"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:text="吴彦祖"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_trade_time"
+                    style="@style/TextViewCaption"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_weight="1"
+                    android:text="12个小时前"
+                    android:textColor="@color/txt_gray" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_trade_desc"
+                style="@style/TextViewCaption"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="本套书是全英版，全新，如有爱它的波特迷，来把它领走吧！"
+                android:textColor="@color/txt_gray" />
+
+            <Button
+                android:id="@+id/btn_tel"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_btn"
+                android:text="联系卖家"
+                android:textColor="@color/main_color" />
+        </LinearLayout>
+
+    </ScrollView>
+    </LinearLayout>

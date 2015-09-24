@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/noticelist"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="5dp">
+
+    <TextView
+        android:id="@+id/tv_notice_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ellipsize="end"
+        android:fontFamily="RobotoSlab-Regular.ttf"
+        android:maxLines="1"
+        android:text="领导突然安排我明天去相亲"
+        android:textColor="@color/color_theme_title"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_notice_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="2015年9月8日"
+        android:textColor="@color/color_theme_title"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_notice_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="3"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:minLines="3"
+        android:text="我是一个懒人，平时喜欢做一些小工具帮自己分担一些工作。这是我一年前做的一个自动切图插件在我是用自己名字暂时随便取的，所以求助V友们帮忙想一个名字，
+然后我会做一个主页。
+像 Slicy 这个名字就不错可惜被用了。"
+        android:textColor="#737373"
+        android:textSize="14sp" />
+
+</LinearLayout>
