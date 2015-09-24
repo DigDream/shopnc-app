@@ -47,6 +47,7 @@ import com.daxueoo.shopnc.ui.activity.ThemeListActivity;
 import com.daxueoo.shopnc.utils.ACache;
 import com.daxueoo.shopnc.utils.ConstUtils;
 import com.daxueoo.shopnc.utils.ImageUtils;
+import com.daxueoo.shopnc.utils.SystemUtils;
 import com.daxueoo.shopnc.utils.TitleBuilder;
 import com.daxueoo.shopnc.utils.ToastUtils;
 import com.melnykov.fab.FloatingActionButton;
@@ -324,6 +325,8 @@ public class CircleDetailFragment extends CommonDetailFragment implements View.O
                 case 1:
                     topicAdapter.notifyDataSetChanged(); // 发送消息通知ListView更新
                     stickThemeListAdapter.notifyDataSetChanged();
+                    SystemUtils.setListViewHeightBasedOnChildren(listView);
+                    SystemUtils.setListViewHeightBasedOnChildren(stickListView);
                     box.hideAll();
                     Toast.makeText(CircleDetailFragment.this.getActivity(), "没有更多新数据了。。", Toast.LENGTH_LONG).show();
                     break;

@@ -181,6 +181,7 @@ public class HomeIndexFragment extends BaseFragment implements View.OnClickListe
         initGridView();
 
         noticeData = new ArrayList<Notice>();
+        SystemUtils.setGridViewHeightBasedOnChildren(gridView);
 
         handler.sendEmptyMessage(4);
 
@@ -380,6 +381,7 @@ public class HomeIndexFragment extends BaseFragment implements View.OnClickListe
                 case 1:
                     topicAdapter.notifyDataSetChanged(); // 发送消息通知ListView更新
                     SystemUtils.setListViewHeightBasedOnChildren(listView);
+                    SystemUtils.setGridViewHeightBasedOnChildren(gridView);
                     box.hideAll();
                     break;
                 //  下拉刷新
@@ -434,7 +436,7 @@ public class HomeIndexFragment extends BaseFragment implements View.OnClickListe
                     Log.e("te123t", circleThemeList.getDatas().getThemes().get(1).toString());
                     loadMoreListViewContainer.loadMoreFinish(false, true);
                 }
-                handler.sendEmptyMessage(3);
+                handler.sendEmptyMessage(1);
             }
 
             @Override
@@ -535,5 +537,11 @@ public class HomeIndexFragment extends BaseFragment implements View.OnClickListe
         @Override
         public void onPageScrollStateChanged(int arg0) {
         }
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        mPtrFrame.autoRefresh();
     }
 }
